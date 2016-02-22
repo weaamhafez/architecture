@@ -26,43 +26,6 @@ $(function(){
 				{ "data": "email" }
 			]
 		} );
-        $('.createUserCntrls').on('keyup change',function(){
-			$(".createUserCntrls").each(function() {
-				$( this ).val($( this ).val().replace(/\s/g, ''));
-			});
-		});
-        $('#userModal').on('hidden.bs.modal', function () {
-        	validator.resetForm();
-			$('#user-form').find("input[type=text],input[type=mobileNumber],input[type=emailFull],input[type=password], textarea").val("");
-        });
-
-		$('#saveUpdateBtn').click(function(){
-			
-			
-			if (!$userForm.valid()) {
-				return;
-			}
-			var data = {};
-			$userForm.serializeArray().map(function(x){data[x.name] = x.value;});
-			var url = "save_or_update";
-            var request = $.post(url, data );
-            var $btn = $(this).button('loading');
-			request.success(function(){
-				usersTable.ajax.reload();
-				validator.resetForm();
-				$('#user-form').find("input[type=text],input[type=mobileNumber],input[type=emailFull],input[type=password], textarea").val("");
-				$('#userModal').modal('hide');
-			});
-
-			request.error(function(data){
-				alert(data.responseText);
-			});
-			request.always(function(){
-                $btn.button('reset');
-            });
-		});
-
-		
 	})
 
 });
