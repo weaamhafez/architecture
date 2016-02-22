@@ -1,0 +1,2 @@
+INSERT INTO `user` VALUES (1, 'weaam', 'Weaam Hafez', 'weaam_hafez@hotmail.com', '05666666', '$2a$10$gp4MpER16y47Dk..lDlpM.SrRKXLwwu/mBzOcoid.0l/ApUQpCPQC', '', NULL, NULL, NULL, NULL);
+INSERT INTO `user` VALUES (2, 'test', 'Test User', 'weaam_hafez@hotmail.com', '05633669', '$2a$10$gp4MpER16y47Dk..lDlpM.SrRKXLwwu/mBzOcoid.0l/ApUQpCPQC', '', NULL, NULL, NULL, NULL);
