@@ -23,4 +23,8 @@
         <put-attribute name="title" value="Users" />  
         <put-attribute name="body" value="/WEB-INF/pages/client/manage/user/users.jsp" />  
     </definition>  
+     <definition name="user" extends="base.definition">  
+        <put-attribute name="title" value="User Data" />  
+        <put-attribute name="body" value="/WEB-INF/pages/client/manage/user/user.jsp" />  
+    </definition>  
 </tiles-definitions> 

@@ -30,7 +30,5 @@
 <script src="<c:url value="/libs/jquery-validation/additional-methods.min.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/js/head.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/libs/bootstrap/js/bootbox.min.js"/>"></script>
-<script language="JavaScript" src="<c:url value="/libs/jquery-ui/jquery-ui.min.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/libs/DataTables/media/js/jquery.dataTables.js"/>"></script>
 <script src="<c:url value="/libs/DataTables/media/js/dataTables.bootstrap.js"/>"></script>
-		<link href="<c:url value="/libs/jquery-ui/jquery-ui.min.css"/>" rel="stylesheet" type="text/css"/>
